@@ -205,6 +205,7 @@ namespace ConsoleApplication
 		{
 			PvrtcType possibleValue;
 			// Check if format matches any enum value
+			if (Enum.TryParse(format, /*ignoreCase:*/ true, out possibleValue))
 			{
 				Program.pvrtcType = possibleValue;
 			}
@@ -218,6 +219,7 @@ namespace ConsoleApplication
 
 		private static void SetHeader(string header)
 		{
+			string headerToLower = header.ToLower();
 			if ("true" == headerToLower || "yes" == headerToLower)
 			{
 				Program.generateHeader = true;
