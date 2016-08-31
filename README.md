@@ -21,8 +21,11 @@ There is a simple help in case you need some additional info about parameters
 dotnet run -help
 ```
 
+## License
+Text in this document and source code files are released into the public domain. See [PUBLICDOMAIN](https://github.com/mcraiha/CSharp-PVRTCgen/blob/master/PUBLICDOMAIN.txt) file.
+
 ##Is this useful tool?
-Not really. Basically you can use PVRTCgen to generate acid style "art" and/or generate PVRTC textures that have very poor compression properies (e.g. zipping the file only gives small decrese in file size).
+Not really. Basically you can use PVRTCgen to generate acid style "art" and/or generate PVRTC textures that have very poor compression properties (e.g. zipping the file only gives small decrease in file size).
 
 ##Limitations
 - Only supports power of two sizes (e.g. 512x256)
@@ -33,8 +36,8 @@ Not really. Basically you can use PVRTCgen to generate acid style "art" and/or g
 ##Visual output
 Here are two sample files generated with this tool and then converted to PNG files with [PVRTexTool](https://community.imgtec.com/developers/powervr/tools/pvrtextool/)
 
-![512x512 4bit opaque](https://github.com/mcraiha/CSharp-PVRTCgen/blob/master/samples/512_4bit_opaque.png)
+![512x512 4bit opaque](https://github.com/mcraiha/CSharp-PVRTCgen/blob/master/samples/512_4bit_opaque.png)  
 512x512 4bit opaque
 
-![512x512 4bit transparent](https://github.com/mcraiha/CSharp-PVRTCgen/blob/master/samples/512_4bit_transparent.png)
+![512x512 4bit transparent](https://github.com/mcraiha/CSharp-PVRTCgen/blob/master/samples/512_4bit_transparent.png)  
 512x512 4bit transparent
