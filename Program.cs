@@ -145,6 +145,14 @@ namespace ConsoleApplication
 			Program.height = 256;
 			Program.pvrtcType = PvrtcType.Transparent4bit;
 			Program.generateHeader = true;
+
+			byte[] pvrtcBytes = PvrtcGen.GeneratePvrtcByteArray(width, height, pvrtcType, generateHeader);
+
+			// Write bytes to output stream
+			using (Stream outputStream = Console.OpenStandardOutput())
+			{
+				outputStream.Write(pvrtcBytes, 0, pvrtcBytes.Length);
+			}
 		}
 
 		#endregion // Simple commands
