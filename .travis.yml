@@ -11,8 +11,9 @@ matrix:
       dotnet: 1.0.0-preview2-003121
 
 script:
-  # Restore, build and run
+  # Restore, build and run (+ check MD5)
   - dotnet restore
   - dotnet build --configuration Release
-  - dotnet bin\Release\netcoreapp1.0\CSharp-PVRTCgen.dll -test > out.pvr
-  - md5sum out.pvr
+  - dotnet bin/Release/netcoreapp1.0/CSharp-PVRTCgen.dll -test > out.pvr
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then md5sum out.pvr ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then md5 out.pvr ; fi
