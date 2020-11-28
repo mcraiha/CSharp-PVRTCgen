@@ -5,7 +5,7 @@ Tool for generating random [PVRTC textures](https://en.wikipedia.org/wiki/PVRTC)
 This project contains few files that can be used to generate PVRTC textures with random data (PVRTC textures are used by PowerVR GPUs). This is .NET Core compatible release, so it should also work with Mono and other C# compatible environments.
 
 ## What is PVRTC and PVR
-PVRTC is a lossy fixed-rate texture compression format. It is used in iOS world since all iPhones and iPads have hardware decoding support for PVRTC textures. [More info](http://cdn.imgtec.com/sdk-documentation/PVRTC+%26+Texture+Compression.User+Guide.pdf)
+PVRTC is a lossy fixed-rate texture compression format. It can used in iOS world since all iPhones and iPads have hardware decoding support for PVRTC textures, but you would want to use ETC2 or ASTC nowadays. [More info](http://cdn.imgtec.com/sdk-documentation/PVRTC+%26+Texture+Compression.User+Guide.pdf)
 
 PVR is a file format that stores additional header info (resolution, metadata, etc.) and texture data into single file. [More info](http://cdn.imgtec.com/sdk-documentation/PVR+File+Format.Specification.pdf)
 
